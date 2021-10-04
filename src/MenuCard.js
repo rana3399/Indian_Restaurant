@@ -7,7 +7,7 @@ function MenuCard({menuData}) {
         <>
         <section className="main-card--container">
 
-            {menuData.map((eachElement, key)=> {
+            {menuData.map((eachElement)=> {
                 return <div className="card-container" key={eachElement.id} > 
                     <div className="card">
                         <div className="card-body">

@@ -1,11 +1,21 @@
 import React, { useState } from 'react'
 import Menu from './menuApi'
-//import Navbar from './Navbar';
+import Navbar from './Navbar';
 import MenuCard from './MenuCard';
+
+
+const uniqueList = [
+        ...new Set(
+            Menu.map((eachItem)=> {
+        return eachItem.category;
+    })
+    ),
+];
 
 function Restaurant() {
     const [menuData, setMenuData]= useState(Menu)
-    //console.log(menuData);
+    const [menuList , setMenuList]= useState(uniqueList)
+
 
     const filterItem=(category)=>{
         const updatedList =  Menu.filter((eachMenu)=> {
@@ -13,23 +23,11 @@ function Restaurant() {
          })
  
          setMenuData(updatedList);
-         //console.log(menuData);
-     
     }
-
+    
     return (
         <>
-        <div>
-         <nav>
-            <div className="navbar">
-                <button onClick={()=> filterItem("breakfast")} className="navbar-links" >Breakfast </button>
-                <button onClick={()=> filterItem("lunch")} className="navbar-links" >Lunch </button>
-                <button onClick={()=> filterItem("evening")} className="navbar-links" >Evening</button>
-                <button onClick={()=> filterItem("dinner")} className="navbar-links" >Dinner </button>
-            </div>
-         </nav>
-        </div>
-
+        <Navbar filterItem={filterItem} menuList={menuList} />
         <MenuCard menuData={menuData}/>
         </>
     )
