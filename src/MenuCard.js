@@ -8,7 +8,9 @@ function MenuCard({menuData}) {
         <section className="main-card--container">
 
             {menuData.map((eachElement)=> {
-                return <div className="card-container" key={eachElement.id} > 
+                return (
+
+                    <div className="card-container" key={eachElement.id} > 
                     <div className="card">
                         <div className="card-body">
                         <span className="card-number card-circle subtle" >{eachElement.id} </span>
@@ -22,10 +24,11 @@ function MenuCard({menuData}) {
                         alt="menu-picture" 
 
                         />
-                        <div className="card-tag"> Order Now</div>
+                        <button className="card-button"> Order Now</button>
                     </div>
                 </div>
             </div>
+                )
             })}
         </section>
         </>

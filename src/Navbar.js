@@ -1,14 +1,15 @@
 import React from 'react'
 
 function Navbar({filterItem, menuList}) {
-    //console.log(menuList);
+    console.log(menuList);
     return (
         <>
-        <div>
+        <div className="button-group-container ">
             {menuList.map((eachElement)=>{
               return  (
+                
                 <div key={eachElement}>
-                    <button onClick={()=> filterItem(eachElement)} className="navbar-links" >{eachElement}</button>
+                    <button onClick={()=> filterItem(eachElement)} className="navbar-button" >{eachElement}</button>
                 </div> 
               )
             }) }
@@ -17,6 +18,7 @@ function Navbar({filterItem, menuList}) {
 
     ) 
 }
+
 
 export default Navbar;
 

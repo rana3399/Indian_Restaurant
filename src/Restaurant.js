@@ -10,6 +10,8 @@ const uniqueList = [
         return eachItem.category;
     })
     ),
+    "All"
+    
 ];
 
 function Restaurant() {
@@ -19,7 +21,15 @@ function Restaurant() {
 
     const filterItem=(category)=>{
         const updatedList =  Menu.filter((eachMenu)=> {
-             return eachMenu.category === category;
+            if(category == "All" ){
+                console.log(Menu);
+                return Menu;
+                
+
+            }else {
+                return eachMenu.category === category;
+            }
+            //  
          })
  
          setMenuData(updatedList);

@@ -213,3 +213,34 @@
     opacity: 1;
     transform: translatey(-2px);
   }
+
+  /* --My CSS----- */
+
+  .button-group-container{
+    width: 100vw;
+    height: 70px;
+    background-color: #faf7f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .navbar-button{
+    width: 5rem;
+    height: 2.5rem;
+    background-color: rgb(255, 255, 255);
+    margin: 1rem;
+    border: solid #faf7f2 1px;
+    border-radius: 10px;
+  }
+
+  .card-button{
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #94ca82cd;
+    margin: 1rem;
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 10px;
+
+  }
