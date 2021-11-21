@@ -6,11 +6,10 @@
   }
   
   html {
-    background: #faf7f2;
+    background: #794040;
     background-image: url(https://s3.postimg.org/s1n3ji1ur/paper_fibers_2_X.png);
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
-    font-size: 14px;
     font-weight: 400;
   }
   
@@ -25,19 +24,20 @@
   }
   
   .main-card--container {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, minmax(300px, 500px));
     grid-gap: 50px;
+    justify-content: space-around; */
+
+    display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
   }
   
   .card-container {
     margin: 25px auto 0;
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: space-around;
-    align-items: flex-start;
   }
   
   .card-container img {
@@ -55,6 +55,8 @@
   
   .card-body {
     display: inline-block;
+    width: 25rem;
+    background-color: rgb(30, 52, 92);
   }
   
   .card-number {
@@ -131,8 +133,9 @@
   }
   
   .card-media {
-    max-width: 100%;
-    height: auto;
+    width: 30rem;
+    height: 15rem;
+    
   }
   
   .card-shadow {

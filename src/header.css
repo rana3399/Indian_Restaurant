@@ -1,0 +1,58 @@
+
+
+.header-main-container{ 
+    width: 100vw;
+    height: 3rem;
+
+    background-color: rgb(126, 75, 75);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: large;
+
+}
+
+.logo{
+    margin: 0 3rem;
+    text-decoration: none;
+    letter-spacing: 3px;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul a{
+margin: 0 3rem;
+text-decoration: none;
+}
+
+.logo, nav ul a{
+    color: azure;
+}
+
+.sign-up-button{
+    border: black solid ;
+    border-radius: 2rem;
+    padding: .5rem;
+    margin-left: 10rem;
+}
+
+.social-media-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .5rem;
+    size: lagre;
+}
+
+.icon{
+    margin: 0 .5rem;
+    color: black;
+    font-size: x-large;
+}

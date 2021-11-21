@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import Menu from './menuApi'
 import Navbar from './Navbar';
 import MenuCard from './MenuCard';
+import Header from './Header';
 
+import "./header.css";
 
 const uniqueList = [
         ...new Set(
@@ -37,6 +39,7 @@ function Restaurant() {
     
     return (
         <>
+        <Header />
         <Navbar filterItem={filterItem} menuList={menuList} />
         <MenuCard menuData={menuData}/>
         </>
