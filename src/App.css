@@ -8,8 +8,6 @@
   html {
     background: #794040;
     background-image: url(https://s3.postimg.org/s1n3ji1ur/paper_fibers_2_X.png);
-    box-sizing: border-box;
-    font-family: "Lato", sans-serif;
     font-weight: 400;
   }
   
@@ -24,12 +22,7 @@
   }
   
   .main-card--container {
-    /* display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 500px));
-    grid-gap: 50px;
-    justify-content: space-around; */
-
-    display: flex;
+   display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -176,7 +169,6 @@
   }
   .btn-group__item {
     border: none;
-    /* min-width: 6rem; */
     padding: 1.5rem 3rem;
     background-color: rgb(255, 255, 255);
     cursor: pointer;
@@ -246,4 +238,47 @@
     border: solid rgb(255, 255, 255) 1px;
     border-radius: 10px;
 
+  }
+
+  /* BUSKET------ */
+
+.busket-page-title{
+  margin-bottom: 2rem;
+}
+
+.main_row{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: -3rem 2rem;
+}
+
+  .bascket-child-container{
+    width: 100vw;
+    height: 10rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+  }
+
+
+
+  .bascket-item-image img{
+   width: 7rem;
+   height: 5rem;
+  }
+
+  .incre-Decre-btn button{
+    width: 2rem;
+    height: 2rem;
+    border: black solid .1rem;
+    border-radius : .5rem;
+    background-color: rgb(52, 156, 26);
+    font-size: larger;
+    margin: 0 .3rem;
+
+    /* position: absolute;
+    right: 20rem; */
+  
   }

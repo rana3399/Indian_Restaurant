@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MenuCard({menuData}) {
+function MenuCard({menuData, onAdd}) {
     //console.log(menuData);
 
     return(
@@ -21,10 +21,10 @@ function MenuCard({menuData}) {
                         <img
                         className="card-media" 
                         src={eachElement.image} 
-                        alt="menu-picture" 
+                        alt="img"
 
                         />
-                        <button className="card-button"> Order Now</button>
+                        <button className="card-button" onClick={()=> onAdd(eachElement)} > Order Now</button>
                     </div>
                 </div>
             </div>

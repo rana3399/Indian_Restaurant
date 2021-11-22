@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Navbar({filterItem, menuList}) {
-    console.log(menuList);
+    //console.log(menuList);
     return (
         <>
         <div className="button-group-container ">
