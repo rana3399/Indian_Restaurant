@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Navbar({filterItem, menuList, cartItems}) {
     //console.log(menuList);
@@ -17,8 +18,10 @@ function Navbar({filterItem, menuList, cartItems}) {
             )
           })}
 
-          <div className="cart" type='badge'> 
-          <a href="&"> <strong>Cart {cartItems.length}</strong>  </a> 
+          <div className="cart" type='badge'>
+          <Link to="/Basket"> <strong>Cart {cartItems.length} </strong> </Link>
+         
+          
           </div>
 
         </div>

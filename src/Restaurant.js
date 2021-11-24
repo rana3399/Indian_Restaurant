@@ -3,8 +3,9 @@ import Menu from './menuApi'
 import Navbar from './Navbar';
 import MenuCard from './MenuCard';
 import Header from './Header';
-import Basket from './Basket';
+import Basket from './Basket'
 
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./header.css";
 
 const uniqueList = [
@@ -85,21 +86,22 @@ function Restaurant() {
 
 
     return (
+        <BrowserRouter>
         <>
-        <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
+        
         <Header />
         <Navbar filterItem={filterItem} menuList={menuList}  cartItems={cartItems}/>
         <MenuCard menuData={menuData} onAdd={onAdd} />
+
+        <Routes>
+           
+           <Route exact path="/basket" element={ <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />   
+          
+        </Routes>
         
-        </>
+       </>
+        </BrowserRouter>
     )
 }
 
 export default Restaurant;
-
- //    const decrementItems = cartItems.map((item) => {
-        //        if((item.id === product.id ) && exist.qty > 0)
-        //        return {...exist, qty: exist.qty - 1
-        //     }
-        //    })
-        //    setCartItems(decrementItems)

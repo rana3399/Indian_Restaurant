@@ -112,7 +112,7 @@
     display: block;
     height: 1px;
     position: absolute;
-    top: 9px;
+    top: -4px;
     width: 75%;
   }
   
@@ -260,7 +260,7 @@
 
   }
 
-  /* BUSKET------ */
+/* BUSKET------ */
 
 .bascket-main-container{
   width: 100vw;
@@ -272,15 +272,12 @@
 }
 
 .busket-page-title{
-  margin-bottom: 2rem;
-}
-
-/* .main_row{
+  width: 15rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin: -3rem 2rem;
-} */
+  margin: 2rem auto;
+}
 
   .bascket-child-container{
     width: 50vw;
@@ -289,11 +286,11 @@
     justify-content: space-between;
     align-items: center;
   }
+
   .bascket-child-container .price{
     width: 150px;
     height: auto;
   }
-
 
 
   .bascket-item-image{
@@ -318,7 +315,8 @@
     height: 3rem;
     border: rgb(177, 160, 160) solid .1rem;
     background-color: rgb(60, 105, 49);
-
+    display: flex;
+    justify-content: center;
 
   }
 
@@ -332,6 +330,14 @@
     margin: 0 .3rem;
 
   
+  }
+
+  .order-summery{
+    width: 10rem;
+    height: 8rem;
+    border: .2rem solid black;
+    padding: 5rem;
+
   }
 
   .row {
