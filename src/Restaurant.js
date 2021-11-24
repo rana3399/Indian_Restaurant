@@ -7,7 +7,6 @@ import Basket from './Basket';
 
 import "./header.css";
 
-
 const uniqueList = [
         ...new Set(
             Menu.map((eachItem)=> {
@@ -29,14 +28,12 @@ function Restaurant() {
                // console.log(Menu);
                 return Menu;
                 
-
             }else {
                 return eachMenu.category === category;
             }
             //  
          })
- 
-         setMenuData(updatedList);
+        setMenuData(updatedList);
     }
 
     const [cartItems, setCartItems] = useState([])   // CART ITEMS
@@ -91,7 +88,7 @@ function Restaurant() {
         <>
         <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />
         <Header />
-        <Navbar filterItem={filterItem} menuList={menuList} />
+        <Navbar filterItem={filterItem} menuList={menuList}  cartItems={cartItems}/>
         <MenuCard menuData={menuData} onAdd={onAdd} />
         
         </>

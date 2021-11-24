@@ -16,6 +16,10 @@
   *:after {
     box-sizing: inherit;
   }
+
+  hr{
+    margin: 1rem 0;
+  }
   
   .subtle {
     color: #aaa;
@@ -209,16 +213,32 @@
     transform: translatey(-2px);
   }
 
-  /* --My CSS----- */
+  /* --My CSS-----  ------------------------------- */
+
+  .nav-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
 
   .button-group-container{
     width: 100vw;
     height: 70px;
     background-color: #faf7f2;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .cart{
+    width: 100vw;
+    height: 70px;
+    background-color: #faf7f2;
+    display: flex;
     justify-content: center;
     align-items: center;
-  
+    padding-right: 2rem;
   }
 
   .navbar-button{
@@ -242,34 +262,67 @@
 
   /* BUSKET------ */
 
+.bascket-main-container{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+
 .busket-page-title{
   margin-bottom: 2rem;
 }
 
-.main_row{
+/* .main_row{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: -3rem 2rem;
-}
+} */
 
   .bascket-child-container{
-    width: 100vw;
-    height: 10rem;
+    width: 50vw;
+    height: 6rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
+  }
+  .bascket-child-container .price{
+    width: 150px;
+    height: auto;
   }
 
 
 
-  .bascket-item-image img{
+  .bascket-item-image{
    width: 7rem;
    height: 5rem;
+   
   }
 
-  .incre-Decre-btn button{
+  .busket-img {
+  width: 7rem;
+  height: 5rem;
+  margin-bottom: 5rem;
+  
+ }
+  .basket-item-info{
+    width: 100px;
+    height: auto;
+  }
+
+  .btn-main-conatainer{
+    width: 7rem;
+    height: 3rem;
+    border: rgb(177, 160, 160) solid .1rem;
+    background-color: rgb(60, 105, 49);
+
+
+  }
+
+  .add , .remove{
     width: 2rem;
     height: 2rem;
     border: black solid .1rem;
@@ -278,7 +331,12 @@
     font-size: larger;
     margin: 0 .3rem;
 
-    /* position: absolute;
-    right: 20rem; */
   
+  }
+
+  .row {
+    min-width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
