@@ -1,38 +1,21 @@
 
-
 .header-main-container{ 
     width: 100vw;
-
-    background-color: rgb(126, 75, 75);
+    background-color: #794040;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     font-size: large;
-
 }
 
-.logo{
-    margin: 0 3rem;
+.logo{   
     text-decoration: none;
-    letter-spacing: 3px;
-    
+    letter-spacing: 3px;    
 }
 
-nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-
-nav ul a{
-margin: 0 3rem;
-text-decoration: none;
-}
 
 .logo, nav ul a{
-    color: azure;
+    color: rgb(255, 255, 255);
 }
 
 .sign-up-button{
@@ -56,3 +39,86 @@ text-decoration: none;
     color: black;
     font-size: x-large;
 }
+
+
+/* Extra small devices (phones,  and down) */
+@media only screen and (max-width: 767px) {
+
+    .header-main-container{ 
+        font-size: small;
+    
+    }
+
+    .card{
+        padding: .5rem;
+    }
+
+    .card-container img {
+        max-width: 100%;
+        height: 100px;
+    }
+    
+    .card-body {
+    /* display: inline-block; */
+    width: 15rem;
+    background-color: rgb(77, 65, 109);
+    }
+
+    .sign-up-button {
+        width: 7vw;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin: 0rem 1rem;
+    }
+
+    .card-title {       
+        font-size: 25px;
+        line-height: 25px;
+       
+    }
+
+    .card-button {      
+        height: 2rem;
+        margin: .5rem;       
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    .card{
+        padding: .5rem;
+    }
+
+    .card-container img {
+        max-width: 100%;
+        height: 145px;
+    }
+    
+    .card-body {
+    width: 20rem;
+    background-color: rgb(235, 144, 60);
+    }
+
+    .sign-up-button {
+        width: 7vw;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin: 0rem 1rem;
+    }
+
+    .card-title {       
+        font-size: 37px;
+        line-height: 25px;
+       
+    }
+
+    .card-button {      
+        height: 1rem;
+        margin: .5rem;
+        
+    }
+    
+}
+

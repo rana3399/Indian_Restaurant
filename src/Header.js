@@ -9,14 +9,6 @@ function Header() {
         <a className="logo" href="index.html">Indian Food Hub</a>
         </div>
 
-        <nav>
-            <ul className="nav-links" >
-                <li><a href="#">Drinks</a> </li>
-                <li><a href="#">Booking</a> </li>
-                <li><a href="#">Order now</a></li>
-            </ul>
-        </nav>
-
         <div className="social-media-container">
             {/* <FontAwesomeIcon icon={faCoffee}>  </FontAwesomeIcon> */}
             {/* <SocialIcon className="social-icon" url="https://github.com/rana3399" /> */}

@@ -5,8 +5,12 @@ import MenuCard from './MenuCard';
 import Header from './Header';
 import Basket from './Basket'
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import "./navbar.css";
 import "./header.css";
+import "./menuCard.css";
+import "./Basket.css";
+
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 const uniqueList = [
         ...new Set(
