@@ -19,6 +19,9 @@ export default function Basket(props) {
             
             <div className="bascket-main-container">
                 <div className ="left_div">
+                
+                
+
                 {cartItems.map((item)=> {
                     return (
                     <div className= "main_row" >
@@ -29,14 +32,12 @@ export default function Basket(props) {
                             </div>
 
                             <div className="basket-item-info">
-                                <h4>{item.name}</h4>  
+                                <h4>{item.name}</h4>
                             </div>
                     
                             <div className="btn-main-conatainer">
-                            
-                                <button onClick={()=> onAdd(item)} className="add"> + </button>
                                 <button onClick ={()=> onRemove(item)} className="remove"> - </button>
-                            
+                                <button onClick={()=> onAdd(item)} className="add"> + </button>
                             </div>
 
                             <div className="price">

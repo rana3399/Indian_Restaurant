@@ -91,19 +91,20 @@ function Restaurant() {
 
     return (
         <BrowserRouter>
-        <>
-        
-        <Header />
-        <Navbar filterItem={filterItem} menuList={menuList}  cartItems={cartItems}/>
-        <MenuCard menuData={menuData} onAdd={onAdd} />
 
-        <Routes>
-           
-           <Route exact path="/basket" element={ <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />   
-          
-        </Routes>
+            <Header />
+            <Navbar 
+            filterItem={filterItem} 
+            menuList={menuList} 
+            cartItems={cartItems}                
+            />
         
-       </>
+            <Routes>
+                <Route path= "/" element={ <MenuCard menuData={menuData} onAdd={onAdd} />}  />
+                <Route path="/basket" element={ <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />   
+            
+            </Routes>
+
         </BrowserRouter>
     )
 }

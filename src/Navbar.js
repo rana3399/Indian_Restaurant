@@ -14,12 +14,12 @@ function Navbar({filterItem, menuList, cartItems}) {
                   <button onClick={()=> filterItem(eachElement)} className="navbar-button" >{eachElement}</button> 
                 </div>
                 
-              </> 
+              </>
             )
           })}
 
           <div className="cart" type='badge'>
-          <Link to="/Basket"> <strong>Cart {cartItems.length} </strong> </Link>
+          <Link to="/Basket"> <strong>Cart / Payment {cartItems.length} </strong> </Link>
          
           
           </div>
