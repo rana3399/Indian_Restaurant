@@ -1,4 +1,4 @@
-import './App.css'
+import './CSS/App.css'
 import Restaurant from './Restaurant'
 
 function App() {

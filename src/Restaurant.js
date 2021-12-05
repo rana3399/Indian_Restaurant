@@ -1,14 +1,15 @@
-import React, { useState } from 'react'
-import Menu from './menuApi'
-import Navbar from './Navbar';
-import MenuCard from './MenuCard';
-import Header from './Header';
-import Basket from './Basket'
+import React, { useState } from 'react';
 
-import "./navbar.css";
-import "./header.css";
-import "./menuCard.css";
-import "./Basket.css";
+import Menu from './Components/menuApi';
+import Navbar from './Components/Navbar';
+import MenuCard from './Components/MenuCard';
+import Header from './Components/Header';
+import Basket from './Components/Basket';
+
+import "./CSS/navbar.css";
+import "./CSS/header.css";
+import "./CSS/menuCard.css";
+import "./CSS/Basket.css";
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
@@ -18,8 +19,7 @@ const uniqueList = [
         return eachItem.category;
     })
     ),
-    "All"
-    
+    "All"   
 ];
 
 function Restaurant() {
@@ -65,8 +65,7 @@ function Restaurant() {
             setCartItems([...cartItems, newProduct])
             console.log(cartItems);
         }
-    }
-    
+    }   
     // -----REMOVE BUTTON ------  --------------
 
     const onRemove =(product)=>{
@@ -88,23 +87,21 @@ function Restaurant() {
         }             
     }
 
-
     return (
         <BrowserRouter>
-
             <Header />
             <Navbar 
             filterItem={filterItem} 
             menuList={menuList} 
             cartItems={cartItems}                
             />
-        
+
             <Routes>
                 <Route path= "/" element={ <MenuCard menuData={menuData} onAdd={onAdd} />}  />
                 <Route path="/basket" element={ <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />   
             
             </Routes>
-
+            
         </BrowserRouter>
     )
 }
