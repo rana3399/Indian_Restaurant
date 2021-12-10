@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import "./menuCard.css";
+
 
 function MenuCard({menuData, onAdd}) {
     //console.log(menuData);
@@ -14,10 +16,9 @@ function MenuCard({menuData, onAdd}) {
                     <div className="card">
                         <div className="card-body">
                         <span className="card-number card-circle subtle" >{eachElement.id} </span>
-                        <span className="card-author subtle" >{eachElement.name} </span>
+            
                         <h2 className="card-title">{eachElement.name}</h2>
                         <span> {eachElement.description} </span>
-                        <div className="card-read">Read More...</div>
                         <img
                         className="card-media" 
                         src={eachElement.image} 

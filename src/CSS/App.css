@@ -20,12 +20,7 @@
   hr{
     margin: 1rem 0;
   }
-  
-  .subtle {
-    color: #aaa;
-  }
-  
-  
+
   
   @media (max-width: 998px) {
     .main-card--cointainer {
