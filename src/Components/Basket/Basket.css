@@ -64,7 +64,7 @@
       border-radius : .5rem;
       background-color: rgb(52, 156, 26);
       font-size: larger;
-      margin: 0 .3rem; 
+      margin: .3rem; 
     }
   
     .order-summery{
@@ -79,4 +79,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    .empty-cart{
+      color: white;
+      display: flex;
+      justify-content: center;
     }

@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
 
 import Menu from './Components/MenuCard/menuApi';
-import Navbar from './Components/Navbar';
+import Navbar from './Components/Navbar/Navbar';
 import MenuCard from './Components/MenuCard/MenuCard';
-import Header from './Components/Header';
+import Header from './Components/Header/Header';
 import Basket from './Components/Basket/Basket';
-
-import "./CSS/navbar.css";
-import "./CSS/header.css";
-
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
@@ -89,15 +85,15 @@ function Restaurant() {
     return (
         <BrowserRouter>
             <Header />
-            <Navbar 
-            filterItem={filterItem} 
+            <Navbar
+            filterItem={filterItem}
             menuList={menuList} 
             cartItems={cartItems}                
             />
 
             <Routes>
                 <Route path= "/" element={ <MenuCard menuData={menuData} onAdd={onAdd} />}  />
-                <Route path="/basket" element={ <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />              
+                <Route path="/basket" element={ <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />           
             </Routes>
             
         </BrowserRouter>

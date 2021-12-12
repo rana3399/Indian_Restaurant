@@ -2,6 +2,8 @@ import React from 'react'
 // import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Github, Linkedin } from 'react-bootstrap-icons'; // BOOTSTRAP
 
+import "./header.css";
+
 function Header() {
     return (
     <div className="header-main-container">         

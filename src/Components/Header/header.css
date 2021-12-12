@@ -3,7 +3,7 @@
     width: 100vw;
     background-color: #794040;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-size: large;
 }
@@ -19,7 +19,7 @@
 }
 
 .sign-up-button{
-    width: 8vw;
+    width: 5rem;
     border: black solid ;
     border-radius: 2rem;
     padding: .5rem;
@@ -65,7 +65,7 @@
     }
 
     .sign-up-button {
-        width: 7vw;
+        width: 3rem;
         border-radius: 0.5rem;
         padding: 0.5rem;
         margin: 0rem 1rem;
@@ -73,8 +73,7 @@
 
     .card-title {       
         font-size: 25px;
-        line-height: 25px;
-       
+        line-height: 25px;      
     }
 
     .card-button {      
@@ -98,26 +97,16 @@
     
     .card-body {
     width: 20rem;
-    background-color: rgb(235, 144, 60);
     }
-
-    .sign-up-button {
-        width: 7vw;
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-        margin: 0rem 1rem;
-    }
-
+    
     .card-title {       
         font-size: 37px;
-        line-height: 25px;
-       
+        line-height: 25px;      
     }
 
     .card-button {      
         height: 1rem;
-        margin: .5rem;
-        
+        margin: .5rem;       
     }
     
 }

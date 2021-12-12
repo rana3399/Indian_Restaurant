@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
+import "./navbar.css";
+
 function Navbar({filterItem, menuList, cartItems}) {
     //console.log(menuList);
     return (

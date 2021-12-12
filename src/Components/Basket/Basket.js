@@ -1,8 +1,7 @@
 import React from 'react'
 import "./Basket.css";
 
-export default function Basket(props) {
-    const {cartItems, onAdd, onRemove} = props;
+export default function Basket({cartItems, onAdd, onRemove}) {
     console.log(cartItems);
 
     // ----------INVOICE AREA ---------
@@ -16,7 +15,7 @@ export default function Basket(props) {
     return (
         <div>
             <h1 className = "busket-page-title">Basket page</h1>
-            <div> {cartItems.length === 0 && <div>Cart is empty</div> }</div>
+            <div> {cartItems.length === 0 && <h3 className='empty-cart'>Cart is empty</h3> }</div>
             
             <div className="bascket-main-container">
                 <div className ="left_div">
@@ -52,40 +51,42 @@ export default function Basket(props) {
                 </div>
 
                  {/* ----------  ORDER SUMMERY ---------- */}
-            <div className="order-summery right_div">
-                {cartItems.length !== 0 && (
-                    <div>
-                        
-                        <div className = "row"> 
-                            <div className="col-2">Item Price </div>
-                            <div className="col-1"> € {itemPrice.toFixed(2) }  </div>
-                        
-                        </div>
-
-                        <div className = "row"> 
-                            <div className="col-2">Tax </div>
-                            <div className="col-1"> € {taxPrice.toFixed(2) }  </div>
-                        
-                        </div>
-
-                        <div className = "row"> 
-                            <div className="col-2"> Delivary </div>
-                            <div className="col-1"> € {delivaryPrice}  </div>
-                        
-                        </div>
-
-                        <hr />
-
-                        <div className = "row"> 
-                            <div className="col-2"> <strong>Total</strong></div>
-                            <div className="col-1"> <strong> €</strong> {totalprice.toFixed(2)  }  </div>
             
+                {cartItems.length > 0 && (
+                    <div className="order-summery right_div">
+                        <div>
+                            
+                            <div className = "row"> 
+                                <div className="col-2">Item Price </div>
+                                <div className="col-1"> € {itemPrice.toFixed(2) }  </div>
+                            
+                            </div>
+
+                            <div className = "row"> 
+                                <div className="col-2">Tax </div>
+                                <div className="col-1"> € {taxPrice.toFixed(2) }  </div>
+                            
+                            </div>
+
+                            <div className = "row"> 
+                                <div className="col-2"> Delivary </div>
+                                <div className="col-1"> € {delivaryPrice}  </div>
+                            
+                            </div>
+
+                            <hr />
+
+                            <div className = "row"> 
+                                <div className="col-2"> <strong>Total</strong></div>
+                                <div className="col-1"> <strong> €</strong> {totalprice.toFixed(2)  }  </div>
+                
+                            </div>
                         </div>
                     </div>
                     
                 )}
                 </div>
-            </div>
+            
             
         </div>
     )
