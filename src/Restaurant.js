@@ -6,7 +6,7 @@ import MenuCard from './Components/MenuCard/MenuCard';
 import Header from './Components/Header/Header';
 import Basket from './Components/Basket/Basket';
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 
 const uniqueList = [
         ...new Set(
@@ -81,7 +81,7 @@ function Restaurant() {
     }
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Header />
             <Navbar
             filterItem={filterItemHandeler}
@@ -94,7 +94,7 @@ function Restaurant() {
                 <Route path="/basket" element={ <Basket cartItems={cartItems} onAdd={onAddHandeler} onRemove={onRemoveHandeler} />} />           
             </Routes>
             
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
