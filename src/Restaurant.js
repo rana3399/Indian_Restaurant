@@ -22,16 +22,14 @@ function Restaurant() {
     const [menuList , setMenuList]= useState(uniqueList)
 
 
-    const filterItem=(category)=>{
+    const filterItemHandeler=(category)=>{
         const updatedList =  Menu.filter((eachMenu)=> {
             if(category == "All" ){
-               // console.log(Menu);
                 return Menu;
                 
             }else {
                 return eachMenu.category === category;
             }
-            //  
          })
         setMenuData(updatedList);
     }
@@ -40,7 +38,7 @@ function Restaurant() {
 
     // -----ADD BUTTON -------------------
 
-    const onAdd = (product) =>{
+    const onAddHandeler = (product) =>{
 
         const exist = cartItems.find(item => item.id === product.id);
         console.log(exist);
@@ -61,9 +59,9 @@ function Restaurant() {
             console.log(cartItems);
         }
     }   
-    // -----REMOVE BUTTON ------  --------------
+    // -----REMOVE BUTTON ------ 
 
-    const onRemove =(product)=>{
+    const onRemoveHandeler =(product)=>{
 
         const exist = cartItems.find((item) => item.id === product.id)
         console.log(exist);
@@ -86,14 +84,14 @@ function Restaurant() {
         <BrowserRouter>
             <Header />
             <Navbar
-            filterItem={filterItem}
+            filterItem={filterItemHandeler}
             menuList={menuList} 
             cartItems={cartItems}                
             />
 
             <Routes>
-                <Route path= "/" element={ <MenuCard menuData={menuData} onAdd={onAdd} />}  />
-                <Route path="/basket" element={ <Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />           
+                <Route path= "/" element={ <MenuCard menuData={menuData} onAdd={onAddHandeler} />}  />
+                <Route path="/basket" element={ <Basket cartItems={cartItems} onAdd={onAddHandeler} onRemove={onRemoveHandeler} />} />           
             </Routes>
             
         </BrowserRouter>

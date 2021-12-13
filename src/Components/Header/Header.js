@@ -1,6 +1,6 @@
 import React from 'react'
-// import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Github, Linkedin } from 'react-bootstrap-icons'; // BOOTSTRAP
+import { Github, Linkedin } from 'react-bootstrap-icons';
+import { Link } from 'react-router-dom';
 
 import "./header.css";
 
@@ -8,13 +8,10 @@ function Header() {
     return (
     <div className="header-main-container">         
         <div>
-        <a className="logo" href="index.html">Indian Food Hub</a>
+        <Link className="logo" to="/">Indian Food Hub</Link>
         </div>
 
-        <div className="social-media-container">
-            {/* <FontAwesomeIcon icon={faCoffee}>  </FontAwesomeIcon> */}
-            {/* <SocialIcon className="social-icon" url="https://github.com/rana3399" /> */}
-            
+        <div className="social-media-container">        
             <a className="icon" href="https://github.com/rana3399"><Github /></a>
             <a className="icon" href="https://www.linkedin.com/in/rana-ahmed-rana/"><Linkedin /></a>      
         </div>

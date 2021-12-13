@@ -16,6 +16,12 @@
     align-items: center;
   }
 
+  .button-group-container button{
+    border: black solid .2px;
+ 
+  }
+
+
   .cart{
     width: 100vw;
     height: 70px;
@@ -35,6 +41,13 @@
     border-radius: 10px;
   }
 
+  .navbar-button:hover {
+    width: 5.5rem;
+    background-color: rgb(102, 74, 74);
+    color: white;
+    transition: all .3s ease;
+  }
+
   .card-button{
     width: 7rem;
     height: 2.5rem;
@@ -44,3 +57,11 @@
     border-radius: 10px;
 
   }
+
+  @media only screen and (max-width: 767px){
+    .nav-main-container{
+      display: none;
+    }
+  }
+
+

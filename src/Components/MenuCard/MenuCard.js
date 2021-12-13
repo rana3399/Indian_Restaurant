@@ -1,17 +1,14 @@
 import React from 'react';
 import "./menuCard.css";
 
-
 function MenuCard({menuData, onAdd}) {
     //console.log(menuData);
-
     return(
         <>
         <section className="main-card--container">
 
             {menuData.map((eachElement)=> {
                 return (
-
                     <div className="card-container" key={eachElement.id} > 
                     <div className="card">
                         <div className="card-body">

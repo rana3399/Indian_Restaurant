@@ -2,7 +2,6 @@ import React from 'react'
 import "./Basket.css";
 
 export default function Basket({cartItems, onAdd, onRemove}) {
-    console.log(cartItems);
 
     // ----------INVOICE AREA ---------
 
@@ -14,40 +13,37 @@ export default function Basket({cartItems, onAdd, onRemove}) {
 
     return (
         <div>
-            <h1 className = "busket-page-title">Basket page</h1>
             <div> {cartItems.length === 0 && <h3 className='empty-cart'>Cart is empty</h3> }</div>
             
             <div className="bascket-main-container">
                 <div className ="left_div">
                 
-                
+                    {cartItems.map((item)=> {
+                        return (
+                        <div className= "main_row" >
+                            <div key={item.id} className="bascket-child-container">
+                                
+                                <div className="bascket-item-image">
+                                    <img className="busket-img"  src={item.image} alt={item.name} />
+                                </div>
 
-                {cartItems.map((item)=> {
-                    return (
-                    <div className= "main_row" >
-                        <div key={item.id} className="bascket-child-container">
-                            
-                            <div className="bascket-item-image">
-                                <img className="busket-img"  src={item.image} alt={item.name} />
-                            </div>
-
-                            <div className="basket-item-info">
-                                <h4>{item.name}</h4>
-                            </div>
-                    
-                            <div className="btn-main-conatainer">
-                                <button onClick ={()=> onRemove(item)} className="remove"> - </button>
-                                <button onClick={()=> onAdd(item)} className="add"> + </button>
-                            </div>
-
-                            <div className="price">
-                                <p> Price:  {item.qty} x {item.price} </p> 
-                            </div>
+                                <div className="basket-item-info">
+                                    <h4>{item.name}</h4>
+                                </div>
                         
+                                <div className="btn-main-conatainer">
+                                    <button onClick ={()=> onRemove(item)} className="remove"> - </button>
+                                    <button onClick={()=> onAdd(item)} className="add"> + </button>
+                                </div>
+
+                                <div className="price">
+                                    <p> Price:  {item.qty} x {item.price} </p>
+                                </div>
+                            
+                            </div>
                         </div>
-                    </div>
-                    )
-                })}
+                        )
+                    })}
                 </div>
 
                  {/* ----------  ORDER SUMMERY ---------- */}
@@ -78,16 +74,21 @@ export default function Basket({cartItems, onAdd, onRemove}) {
 
                             <div className = "row"> 
                                 <div className="col-2"> <strong>Total</strong></div>
-                                <div className="col-1"> <strong> €</strong> {totalprice.toFixed(2)  }  </div>
+                                <div className="col-1 final-price"> <strong> €</strong> {totalprice.toFixed(2)  }  </div>
                 
                             </div>
+
                         </div>
+
+                        
+                        <button className='checkout-btn' >Checkout</button>
+                        
                     </div>
                     
                 )}
-                </div>
+            </div>
             
-            
+        
         </div>
     )
 }
