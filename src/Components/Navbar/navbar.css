@@ -32,6 +32,17 @@
     padding-right: 2rem;
   }
 
+  .cart-link{
+    text-decoration: none;
+    font-size: large;
+    color: rgb(3, 190, 3);
+  }
+
+  .cart-link:hover {
+    color: rgb(21, 70, 2);
+    transition: all .2s ease-in-out;
+  }
+
   .navbar-button{
     width: 5rem;
     height: 2.5rem;

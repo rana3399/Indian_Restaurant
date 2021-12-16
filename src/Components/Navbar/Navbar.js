@@ -21,7 +21,7 @@ function Navbar({filterItem, menuList, cartItems}) {
           })}
 
           <div className="cart" type='badge'>
-          <Link to="/Basket"> <strong>Cart / Payment {cartItems.length} </strong> </Link>
+          <Link to="/Basket" className='cart-link'> <strong>Cart 🛒 {cartItems.length} </strong> </Link>
          
           
           </div>

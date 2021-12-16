@@ -66,6 +66,12 @@
       font-size: larger;
       margin: .3rem; 
     }
+
+    .add:hover , .remove:hover{
+      
+      background-color: rgb(24, 77, 11);
+      
+    }
   
     .order-summery{
       width: 10rem;
@@ -85,6 +91,7 @@
       color: white;
       display: flex;
       justify-content: center;
+      margin-top: 5rem;
     }
 
     .right_div{
