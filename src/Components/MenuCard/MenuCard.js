@@ -1,5 +1,6 @@
 import React from 'react';
 import "./menuCard.css";
+import "./mediaQueryCard.css";
 
 function MenuCard({menuData, onAdd}) {
     //console.log(menuData);
@@ -9,20 +10,20 @@ function MenuCard({menuData, onAdd}) {
 
             {menuData.map((eachElement)=> {
                 return (
-                    <div className="card-container" key={eachElement.id} > 
+                    <div className="card-container card-tag" key={eachElement.id} > 
                     <div className="card">
                         <div className="card-body">
                         <span className="card-number card-circle subtle" >{eachElement.id} </span>
             
                         <h2 className="card-title">{eachElement.name}</h2>
-                        <span> {eachElement.description} </span>
+                        <span className='card-description'> {eachElement.description} </span>
                         <img
                         className="card-media" 
                         src={eachElement.image} 
                         alt="img"
 
                         />
-                        <button className="card-button" onClick={()=> onAdd(eachElement)} > Order Now</button>
+                        <button className="card-button" onClick={()=> onAdd(eachElement)} > Order Now </button>
                     </div>
                 </div>
             </div>
