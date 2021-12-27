@@ -7,16 +7,14 @@
   
   html {
     background: #794040;
-    background-image: url(https://s3.postimg.org/s1n3ji1ur/paper_fibers_2_X.png);
     font-weight: 400;
   }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
+  body{
+    max-width: 100vw !important;
+    height: auto;
   }
-
+  
+ 
   hr{
     margin: 1rem 0;
   }

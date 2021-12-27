@@ -12,7 +12,7 @@ export default function Basket({cartItems, onAdd, onRemove}) {
     // ----------INVOICE AREA END ---------
 
     return (
-        <div>
+        <div className='bascket-parent-container'>
             <div> {cartItems.length === 0 && <h3 className='empty-cart'>Cart is empty</h3> }</div>
             
             <div className="bascket-main-container">
@@ -50,7 +50,7 @@ export default function Basket({cartItems, onAdd, onRemove}) {
             
                 {cartItems.length > 0 && (
                     <div className="order-summery right_div">
-                        <div>
+                        <div className='row-container'>
                             
                             <div className = "row"> 
                                 <div className="col-2">Item Price </div>
@@ -81,7 +81,9 @@ export default function Basket({cartItems, onAdd, onRemove}) {
                         </div>
 
                         
-                        <button className='checkout-btn' >Checkout</button>
+                        <div className="checout-btn-container">
+                            <button className='checkout-btn' >Checkout</button>
+                        </div>
                         
                     </div>
                     
@@ -92,3 +94,4 @@ export default function Basket({cartItems, onAdd, onRemove}) {
         </div>
     )
 }
+

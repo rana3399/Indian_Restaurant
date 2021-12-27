@@ -1,15 +1,19 @@
 /* -----MENU CARD CSS ----------- */
 
 .main-card--container {
-    display: flex;
+     width: 95vw;
+     height: auto;
+     display: flex;
      justify-content: space-around;
      align-items: center;
      flex-wrap: wrap;
+     margin: 0 auto;
    }
    
    .card-container {
-     margin: 25px auto 0;
-     position: relative;
+    
+     margin: 20px 15px;
+
    }
    
    .card-container img {

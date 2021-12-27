@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar';
 import MenuCard from './Components/MenuCard/MenuCard';
 import Header from './Components/Header/Header';
 import Basket from './Components/Basket/Basket';
+//import Footer from './Components/Footer/Footer';
 
 import { HashRouter, Routes, Route, Link } from "react-router-dom";
 
@@ -83,16 +84,19 @@ function Restaurant() {
     return (
         <HashRouter>
             <Header />
+            
             <Navbar
             filterItem={filterItemHandeler}
             menuList={menuList} 
             cartItems={cartItems}                
             />
+            
 
             <Routes>
                 <Route path= "/" element={ <MenuCard menuData={menuData} onAdd={onAddHandeler} />}  />
                 <Route path="/basket" element={ <Basket cartItems={cartItems} onAdd={onAddHandeler} onRemove={onRemoveHandeler} />} />           
             </Routes>
+            
             
         </HashRouter>
     )

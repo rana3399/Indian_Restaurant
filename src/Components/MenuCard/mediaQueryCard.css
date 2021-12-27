@@ -9,14 +9,12 @@
       background-color: #fff;
       padding: 10px;
       position: relative;
-      box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
       z-index: 1;
     }
     
     .card-body {
       display: inline-block;
       width: 15rem;
-      background-color: rgb(30, 52, 92);
     }
     
     .card-number {
@@ -48,14 +46,12 @@
       background-color: #fff;
       padding: 10px;
       position: relative;
-      box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
       z-index: 1;
     }
     
     .card-body {
       display: inline-block;
       width: 15rem;
-      background-color: rgb(30, 52, 92);
     }
     
     .card-number {
