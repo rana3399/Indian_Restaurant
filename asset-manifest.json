@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Indian_Restaurant/static/css/main.7a089659.chunk.css",
-    "main.js": "/Indian_Restaurant/static/js/main.75767a1b.chunk.js",
-    "main.js.map": "/Indian_Restaurant/static/js/main.75767a1b.chunk.js.map",
+    "main.css": "/Indian_Restaurant/static/css/main.e8524f78.chunk.css",
+    "main.js": "/Indian_Restaurant/static/js/main.092b0310.chunk.js",
+    "main.js.map": "/Indian_Restaurant/static/js/main.092b0310.chunk.js.map",
     "runtime-main.js": "/Indian_Restaurant/static/js/runtime-main.852cc6fa.js",
     "runtime-main.js.map": "/Indian_Restaurant/static/js/runtime-main.852cc6fa.js.map",
-    "static/js/2.5017a290.chunk.js": "/Indian_Restaurant/static/js/2.5017a290.chunk.js",
-    "static/js/2.5017a290.chunk.js.map": "/Indian_Restaurant/static/js/2.5017a290.chunk.js.map",
+    "static/js/2.906eacad.chunk.js": "/Indian_Restaurant/static/js/2.906eacad.chunk.js",
+    "static/js/2.906eacad.chunk.js.map": "/Indian_Restaurant/static/js/2.906eacad.chunk.js.map",
     "index.html": "/Indian_Restaurant/index.html",
-    "static/css/main.7a089659.chunk.css.map": "/Indian_Restaurant/static/css/main.7a089659.chunk.css.map",
-    "static/js/2.5017a290.chunk.js.LICENSE.txt": "/Indian_Restaurant/static/js/2.5017a290.chunk.js.LICENSE.txt",
+    "static/css/main.e8524f78.chunk.css.map": "/Indian_Restaurant/static/css/main.e8524f78.chunk.css.map",
+    "static/js/2.906eacad.chunk.js.LICENSE.txt": "/Indian_Restaurant/static/js/2.906eacad.chunk.js.LICENSE.txt",
     "static/media/allupakoida.19bb4bd0.jpg": "/Indian_Restaurant/static/media/allupakoida.19bb4bd0.jpg",
     "static/media/chola.c74e8541.jpg": "/Indian_Restaurant/static/media/chola.c74e8541.jpg",
     "static/media/corn.8f92996c.jpg": "/Indian_Restaurant/static/media/corn.8f92996c.jpg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.852cc6fa.js",
-    "static/js/2.5017a290.chunk.js",
-    "static/css/main.7a089659.chunk.css",
-    "static/js/main.75767a1b.chunk.js"
+    "static/js/2.906eacad.chunk.js",
+    "static/css/main.e8524f78.chunk.css",
+    "static/js/main.092b0310.chunk.js"
   ]
 }
